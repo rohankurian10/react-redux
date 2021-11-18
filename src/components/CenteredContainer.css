@@ -1,6 +1,60 @@
 .CenteredContainer {
   background-color: #393e46;
-  height: 30rem;
+  height: 20rem;
   width: 50rem;
   border-radius: 1rem;
+}
+
+.TitleContainer {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TitleContainer h2 {
+  margin: 0;
+  padding: 0;
+  color: #eeeeee;
+}
+
+.CounterContainer {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CounterContainer p {
+  color: #00adb5;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.ButtonContainer {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ButtonContainer button {
+  background-color: #00adb5;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 10rem;
+  height: 3rem;
+  margin: 0rem 1.5rem 0rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.4s;
+  color: #eeeeee;
+}
+
+.ButtonContainer button:hover {
+  background-color: #005054;
 }
