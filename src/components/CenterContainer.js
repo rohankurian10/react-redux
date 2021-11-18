@@ -14,9 +14,9 @@ const CenterContainer = () => {
         <p>{counter}</p>
       </div>
       <div className="ButtonContainer">
-        <button onClick="IncrementCounter">Increment</button>
+        <button>Increment</button>
         <button>Change</button>
-        <button onClick="DecrementCounter">Decrement</button>
+        <button>Decrement</button>
       </div>
     </div>
   );
