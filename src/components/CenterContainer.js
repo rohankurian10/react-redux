@@ -1,9 +1,15 @@
 import "./CenteredContainer.css";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 const CenterContainer = () => {
-  //   const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const counter = useSelector((state) => state.counter);
+  const IncrementHandler = () => {
+    dispatch({ type: "INC" });
+  };
+  const DecrementHandler = () => {
+    dispatch({ type: "DEC" });
+  };
 
   return (
     <div className="CenteredContainer">
@@ -14,9 +20,9 @@ const CenterContainer = () => {
         <p>{counter}</p>
       </div>
       <div className="ButtonContainer">
-        <button>Increment</button>
+        <button onClick={IncrementHandler}>Increment</button>
         <button>Change</button>
-        <button>Decrement</button>
+        <button onClick={DecrementHandler}>Decrement</button>
       </div>
     </div>
   );
